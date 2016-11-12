@@ -1,0 +1,294 @@
+#secondPageWrapper{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	/*text-align: center;*/
+	z-index: 10;
+	background-color: #ec6b46;
+	/*border:1px solid black;*/
+	position: relative;
+	
+	margin-top: -40rem;
+	display: none;
+}
+#secondPage{
+	/*z-index: 10;*/
+	width:50rem;
+	height:100%;
+	margin:0 auto;
+	position:relative;
+	top:0rem;
+	margin-top: 9rem;
+	margin-bottom: 4rem;
+	/*background-color: black;*/
+
+	/*transition: all 1s 0.1s;
+	-moz-transition:all 1s 0.1s; 
+	-webkit-transition:all 1s 0.1s; 
+	-o-transition:all 1s 0.1s; */
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-ms-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+	/*transform: translateY(-37.8rem);
+	-webkit-transform:translateY(-37.8rem);
+	-moz-transform:translateY(-37.8rem);
+	-o-transform:translateY(-37.8rem);
+	-ms-transform:translateY(-37.8rem);*/
+}
+#secondWrapper{
+	/*border:1px solid black;
+	height:100%;*/
+}
+.secondWrapper_move{
+	/*transform: translateY(-37.8rem);
+	-webkit-transform:translateY(-37.8rem);
+	-moz-transform:translateY(-37.8rem);
+	-o-transform:translateY(-37.8rem);
+	-ms-transform:translateY(-37.8rem);*/
+}
+.work_box{
+	margin-bottom: 3.6rem;
+}
+.cont_header{
+	height:4rem;
+	position: relative;
+}
+.cont_title{
+	border:0.7rem solid black;
+	border-radius: 1.2rem;
+	position:relative;
+	width:25rem;
+	height:6rem;
+	line-height: 4.6rem;
+	text-align: center;
+	margin:0 auto;
+	font-size: 2.4rem;
+	font-weight: 600;
+	background-color: #fcd445;
+	z-index: 9;
+}
+.pencil_header{
+	position: relative;
+	top:-5rem;
+	left:8rem;
+	/*border:1px solid black;*/
+	/*background:url(http://www.apollozz.com/images/spite_600.png) no-repeat 0 -75rem;*/
+}
+.pencil_footer{
+	position: relative;
+	top:-5rem;
+	left:32.5rem;
+}
+.chatou{
+	position: relative;
+	top:-8.5rem;
+	left:8.5rem;
+}
+.mic{
+	position: relative;;
+	top:-7.3rem;
+	left:38rem;
+	animation: micMove 3s infinite;
+	z-index: 7;
+}
+.fengche{
+	position: relative;
+	/*border:1px solid black;*/
+	width: 6rem;
+	height: 6rem;
+	background: url(../images/spite_150.png) no-repeat 0 -18rem;
+	background-size: 100% auto;
+	left:9rem;
+	top:-9rem;
+	animation: fengcheMove 1.5s linear infinite;
+}
+.why{
+	position: relative;
+	width: 4rem;
+	height: 4rem;
+	background: url(../images/spite_150.png) no-repeat 0 -8rem;
+	background-size: 100% auto;
+	left:10rem;
+	top:-14rem;
+	/*border:1px solid black;*/
+	z-index: 9;
+}
+@-webkit-keyframes fengcheMove{
+	0%{-webkit-transform:rotate(0);}
+	100%{-webkit-transform:rotate(180deg);}
+}
+
+@-moz-keyframes fengcheMove{
+	0%{-moz-transform:rotate(0);}
+	100%{-moz-transform:rotate(180deg);}
+}
+
+@-ms-keyframes fengcheMove{
+	0%{-ms-transform:rotate(0);}
+	100%{-ms-transform:rotate(180deg);}
+}
+
+@-o-keyframes fengcheMove{
+	0%{-o-transform:rotate(0);}
+	100%{-o-transform:rotate(180deg);}
+}
+
+@keyframes fengcheMove{
+	0%{transform:rotate(0);}
+	100%{transform:rotate(180deg);}
+}
+@-webkit-keyframes micMove{
+	0%,50%,100%{-webkit-transform:rotate(0) translateY(0rem);}
+	25%{-webkit-transform:rotate(-5deg) translateY(0.1rem);}
+	75%{-webkit-transform:rotate(5deg) translateY(0.1rem);}
+}
+
+@-moz-keyframes micMove{
+	0%,50%,100%{-moz-transform:rotate(0) translateY(0rem);}
+	25%{-moz-transform:rotate(-5deg) translateY(0.1rem);}
+	75%{-moz-transform:rotate(5deg) translateY(0.1rem);}
+}
+
+@-ms-keyframes micMove{
+	0%,50%,100%{-ms-transform:rotate(0) translateY(0rem);}
+	25%{-ms-transform:rotate(-5deg) translateY(0.1rem);}
+	75%{-ms-transform:rotate(5deg) translateY(0.1rem);}
+}
+
+@-o-keyframes micMove{
+	0%,50%,100%{-o-transform:rotate(0) translateY(0rem);}
+	25%{-o-transform:rotate(-5deg) translateY(0.1rem);}
+	75%{-o-transform:rotate(5deg) translateY(0.1rem);}
+}
+
+@keyframes micMove{
+	0%,50%,100%{transform:rotate(0) translateY(0rem);}
+	25%{transform:rotate(-5deg) translateY(0.1rem);}
+	75%{transform:rotate(5deg) translateY(0.1rem);}
+}
+.content{
+	border:0.7rem solid black;
+	border-radius: 1.2rem;
+	width:50rem;
+	height:24.8rem;
+	background-color: #fae2ed;
+	position: relative;
+	z-index: 8;
+}
+.cont_pic{
+	width:28rem;
+	height:22rem;
+	/*border:1px solid blue;*/
+	padding-top: 3rem;
+	float:left;
+}
+.cont_intro{
+	float:left;
+	width:20.6rem;
+	height:16rem;
+	/*border:1px solid black;*/
+	float:left;
+	margin-top: 3rem;
+	padding-top: 2rem;
+}
+.cont_intro h3{
+	font-size: 1rem;
+	/*border:1px solid black;*/
+	/*float:left;*/
+}
+.cont_intro a{
+	/*border:1px solid black;*/
+	margin-bottom: 1rem;
+	text-decoration: none;
+	color: #666;
+	font-weight: bold;;
+	/*float:left;*/
+}
+.cont_intro a:hover{
+	color:#ec6b46;
+	color: #EC6B46;
+}
+.cont_intro a img{
+	width:5rem;
+	height:5rem;
+	/*border:1px solid black;*/
+	margin:1rem 0 0 3rem;
+}
+.cont_intro p{
+	font-size: 0.8rem;
+	margin-top: 1.6rem;
+}
+.cont_intro p span{
+	display: block;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+/*backToTop*/
+#backToTop{
+	/*border:1px solid black;*/
+	position: fixed;
+	width: 4rem;
+	right: 4rem;
+	bottom: 4rem;
+	cursor:pointer;
+	text-align: center;
+	opacity: 0;
+}
+.pow_pic1{
+	width: 4rem;
+	height: 4rem;
+	background: url(../images/arrow_1.png) no-repeat;
+	background-size: 100% 100%;
+	/*-webkit-transition: all 0.5s 0.1s;
+	-moz-transition: all 0.5s 0.1s;
+	-ms-transition: all 0.5s 0.1s;
+	-o-transition: all 0.5s 0.1s;
+	transition: all 0.5s 0.1s;*/
+}
+#backToTop:hover .pow_pic1{
+	background: url(../images/arrow_3.png) no-repeat;
+	background-size: 100% 100%;
+}
+.pow_pic2{
+	width: 3rem;
+	height: 0.75rem;
+	position: absolute;
+	right: 0.5rem;
+	top: 3rem;
+	/**/
+	background: url(../images/spite_80.png) no-repeat;
+	background-size: 100% auto;
+	background-position: 0 -63rem;
+
+	-moz-transition: all 0.5s ;
+	-ms-transition: all 0.5s ;
+	-o-transition: all 0.5s ;
+	transition: all 0.5s ;
+}
+.pow_pic2_move{
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+#backToTop:hover .pow_pic2{
+	-webkit-transform: rotate(90deg) translateX(-1.1rem);
+	-moz-transform: rotate(90deg) translateX(-1.1rem);
+	-ms-transform: rotate(90deg) translateX(-1.1rem);
+	-o-transform: rotate(90deg) translateX(-1.1rem);
+	transform: rotate(90deg) translateX(-1.1rem);
+	-webkit-transition: all 0.5s ;
+	-moz-transition: all 0.5s ;
+	-ms-transition: all 0.5s ;
+	-o-transition: all 0.5s ;
+	transition: all 0.5s ;
+}
+
+.btp_p{
+	font-size: xx-small;
+}
+

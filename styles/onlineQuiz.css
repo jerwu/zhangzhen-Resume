@@ -1,0 +1,277 @@
+/*onlineQuiz start*/
+#onlineQuiz{
+	background-color: #fae2ed;
+	border:1px solid transparent;
+	position: relative;
+
+	transition: all 1s;
+	-moz-transition:all 1s; 
+	-webkit-transition:all 1s ; 
+	-o-transition:all 1s; 
+}
+.onlineQuiz_move{
+	transform: translateY(-100%);
+	-webkit-transform:translateY(-100%);
+	-moz-transform:translateY(-100%);
+	-o-transform:translateY(-100%);
+	-ms-transform:translateY(-100%);
+	transition: all 1s;
+	-moz-transition:all 1s; 
+	-webkit-transition:all 1s;
+	-o-transition:all 1s; 
+}
+.quizClose{
+	float:right;
+	margin:1rem 1rem 0 0;
+	/*z-index: 3;*/
+	/*display: none;*/
+}
+.author{
+	/*border:1px solid black;*/
+	display: inline-block;
+	float: left;
+	position:relative;
+	left:50%;
+	margin-left: -5rem;
+	margin-top: 13rem;
+	z-index: 2;
+	/*text-align: center;*/
+}
+.author_move{
+	transform: translateX(-27rem);
+	-webkit-transform:translateX(-27rem);
+	-moz-transform:translateX(-27rem);
+	-o-transform:translateX(-27rem);
+	-ms-transform:translateX(-27rem);
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.author_pic{
+	float: left;
+}
+.quiz_authorPic{
+	position: relative;
+	width: 10rem;height: 10rem;
+	/*border:1px solid black;*/
+	background: url(../images/spite_200.png) 0 -20rem;
+	background-size: 100% auto;
+}
+.author_self{
+	float: left;
+}
+.greeting p{
+	width:2rem;
+	height: 2.2rem; 
+	/*border:1px solid black;*/
+	margin: 1rem 0 0 -3rem;
+	font-weight: bold;
+	font-size: 1.5rem;
+	overflow: hidden;
+}
+.author ul{
+	position: relative;
+	left:2rem;
+	top:-3rem;
+	/*display: none;*/
+}
+.author ul li{
+	width: 14rem;
+	height:2rem;
+	line-height: 2rem;
+	opacity: 0;
+	/*padding-left: 2rem;*/
+	/*margin:2rem 0;*/
+}
+.author li:hover{
+	border-radius: 4rem;
+	box-shadow: 0 0.1rem 0.5rem #333,
+				0 0.1rem 0.5rem #333,
+				0 0.1rem 0.5rem #333, 
+				0 0.1rem 0.5rem #333;
+}
+.author .question1{
+	margin:0.8rem 0 0 -1.5rem;
+	-webkit-transition: opacity 0.5s  ;
+	-moz-transition: opacity 0.5s ;
+	-ms-transition: opacity 0.5s ;
+	-o-transition: opacity 0.5s ;
+	transition: opacity 0.5s ;
+}
+.author .question2{
+	margin:1.4rem 0 0 1.75rem;
+	-webkit-transition: opacity 0.5s 0.4s;
+	-moz-transition: opacity 0.5s 0.4s;
+	-ms-transition: opacity 0.5s 0.4s;
+	-o-transition: opacity 0.5s 0.4s;
+	transition: opacity 0.5s 0.4s;
+}
+.author .question3{
+	margin:1.8rem 0 0 3.6rem;
+	-webkit-transition: opacity 0.5s 0.8s;
+	-moz-transition: opacity 0.5s 0.8s;
+	-ms-transition: opacity 0.5s 0.8s;
+	-o-transition: opacity 0.5s 0.8s;
+	transition: opacity 0.5s 0.8s;
+}
+.author .question4{
+	margin:1.8rem 0 0 1.75rem;
+	-webkit-transition: opacity 0.5s 1.2s;
+	-moz-transition: opacity 0.5s 1.2s;
+	-ms-transition: opacity 0.5s 1.2s;
+	-o-transition: opacity 0.5s 1.2s;
+	transition: opacity 0.5s 1.2s;
+}
+.author .question5{
+	margin:0.8rem 0 0 -1.5rem;
+	-webkit-transition: opacity 0.5s 1.5s;
+	-moz-transition: opacity 0.5s 1.5s;
+	-ms-transition: opacity 0.5s 1.5s;
+	-o-transition: opacity 0.5s 1.5s;
+	transition: opacity 0.5s 1.5s;
+}
+.author li a{
+	color:#000;
+	font-size:13px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.questionIcon{
+	text-align:center;
+	line-height: 1.8rem;
+	font-size: 1rem;
+	width: 2rem;
+	height: 2rem;
+	border: 0.15rem solid black;
+	border-radius: 50%;
+	background-color: #EC6B46;
+	float: left;
+	margin-right: 0.5rem;
+}
+.whiteboard{
+	width: 24rem;
+	height: 20rem;
+	border:0.15rem solid black;
+	border-radius: 0.8rem;
+	position: relative;
+	left:50%;
+	margin-left: -12rem;
+	margin-top: 10rem;
+	background-color: #FCFCFC;
+	text-align: center;
+}
+.whiteboard_move{
+	transform: translateX(17rem);
+	-webkit-transform:translateX(17rem);
+	-moz-transform:translateX(17rem);
+	-o-transform:translateX(17rem);
+	-ms-transform:translateX(17rem);
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.wb_start{
+	color:black;
+	line-height: 18rem;
+	/*border:1px solid red;*/
+	display: none;
+}
+.wb_answer{
+	border:1px solid transparent;
+	overflow: hidden;
+	position: relative;
+	top:-19.5rem;
+	/*padding-top:-20rem;*/
+}
+.answer1,
+.answer2,
+.answer3,
+.answer4,
+.answer5
+{
+	position: relative;
+	/*border:1px solid black;*/
+	width: 24rem;
+	height: 20rem;
+	padding-top:1.2rem;
+	/*float: left;*/
+	display: none;
+	z-index: 3;
+}
+.emoji{
+	position: relative;
+	left:7.2rem;
+}
+.bling{
+	-webkit-animation: blingbling 1.5s infinite;
+	-moz-animation: blingbling 1.5s infinite;
+	-ms-animation: blingbling 1.5s infinite;
+	-o-animation: blingbling 1.5s infinite;
+	animation: blingbling 1.5s infinite;
+}
+@-moz-keyframes blingbling{/*只做了火狐的兼容*/
+	0%,100%{opacity: 0;}
+	30%,70%{opacity: 1;}
+}
+@-webkit-keyframes blingbling{/*只做了火狐的兼容*/
+	0%,100%{opacity: 0;}
+	30%,70%{opacity: 1;}
+}
+@-o-keyframes blingbling{/*只做了火狐的兼容*/
+	0%,100%{opacity: 0;}
+	30%,70%{opacity: 1;}
+}
+@keyframes blingbling{/*只做了火狐的兼容*/
+	0%,100%{opacity: 0;}
+	30%,70%{opacity: 1;}
+}
+.answer p{
+	line-height: 2rem;
+	opacity: 0;
+}
+.wb_p1{
+	-webkit-transition: opacity 0.5s 0.5s;
+	-o-transition: opacity 0.5s 0.5s;
+	transition: opacity 0.5s 0.5s;
+}
+.wb_p2{
+	-webkit-transition: opacity 0.5s 0.8s;
+	-o-transition: opacity 0.5s 0.8s;
+	transition: opacity 0.5s 0.8s;
+}
+.wb_p3{
+	-webkit-transition: opacity 0.5s 1.1s;
+	-o-transition: opacity 0.5s 1.1s;
+	transition: opacity 0.5s 1.1s;
+}
+.wb_p4{
+	-webkit-transition: opacity 0.5s 1.4s;
+	-o-transition: opacity 0.5s 1.4s;
+	transition: opacity 0.5s 1.4s;
+}
+.wb_p5{
+	-webkit-transition: opacity 0.5s 1.7s;
+	-o-transition: opacity 0.5s 1.7s;
+	transition: opacity 0.5s 1.7s;
+}
+.wb_p6{
+	-webkit-transition: opacity 0.5s 2.0s;
+	-o-transition: opacity 0.5s 2.0s;
+	transition: opacity 0.5s 2.0s;
+}
+.wb_p7{
+	-webkit-transition: opacity 0.5s 2.2s;
+	-o-transition: opacity 0.5s 2.2s;
+	transition: opacity 0.5s 2.2s;
+}
+.wb_p8{
+	-webkit-transition: opacity 0.5s 2.4s;
+	-o-transition: opacity 0.5s 2.4s;
+	transition: opacity 0.5s 2.4s;
+}
+.answer-color{
+	color:#EC6B46;
+	font-weight: bold;
+}
+
+
